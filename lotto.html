@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Lotto</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://raw.github.com/jquery/jquery-mobile/master/js/jquery.mobile.vmouse.js"></script>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+  
+	<style>
+		body {
+			font-family:Arial;
+			color:#333;
+		}
+		h2 {
+			color:#9d3dae;
+		}
+		.selected {
+			background:#4ab5e2!important;
+			 -moz-transition: all 2s ease-in;
+				/* WebKit */
+				-webkit-transition: all 2s ease-in;
+				/* Opera */
+				-o-transition: all 2s ease-in;
+				/* Standard */
+				transition: all 2s ease-in;
+		}
+		#start {
+			border-radius:5px;
+			background: linear-gradient(to bottom, #0088cc 0%,#0044cc 100%);
+			color:#fff;
+			padding:10px;
+			border:none;
+			text-transform:uppercase;
+			box-shadow:2px 1px 1px #999;
+			margin-top:15px;
+		}
+		#message {
+			background-color:#9d3dae;
+			color:#fff;
+			font-size:15px;
+			height:20px;
+			padding:20px;
+			font-weight:bold;
+		}
+		.contianer {
+			width:300px;
+			margin:0 auto;
+		}
+		.pic {
+			height:98px;
+			width:100px;
+			background: linear-gradient(to bottom, #bf55d2 0%,#9d3dae 100%);
+			float:left;
+		}
+		#placer {
+			width:300px;
+			height:300px;
+			position:relative;
+		}
+		.coverWall {
+			position:absolute;
+			top:0px;
+			left:0px;
+			cursor: url(images/coin.png);
+		}
+		.tile {
+			background:#4ab5e2;
+			width:30px;
+			height:30px;
+			display:block;
+			float:left;
+		}
+		.pic img {
+			margin:11px 0px 0 6px;
+		}
+		#start {
+			display:none;
+			margin-bottom:10px;
+		}
+		#instant {
+			position:absolute;
+			width: 205px;
+			height: 223px;
+			background:url(images/primary.png) no-repeat;
+			top: 34px;
+			left: 56px;
+		}
+		.result {
+			text-align:center;
+		}
+	</style>
+</head>
+<body>
+	<div class="contianer">
+		<h2>Play Scratch Lottery now!</h2>
+		<div id="placer">
+			<div id="instant">
+			</div>
+		</div>
+		<div class="result">
+			<div id="message"></div>
+			<button id="start" value="start">Try again</button>
+			
+		</div>
+	</div>
+</body>
+</html>
+
